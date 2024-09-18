@@ -1,0 +1,64 @@
+/* Mengatur gambar latar belakang untuk halaman index.html */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/beranda.jpg') no-repeat center center fixed; /* Gambar 'beranda.jpg' di folder images */
+    background-size: cover; /* Gambar mengisi seluruh layar */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Mengatur tinggi halaman agar sesuai dengan tinggi viewport */
+}
+
+/* Mengatur header dengan navigasi */
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Header dengan latar semi-transparan */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed; /* Header tetap di bagian atas saat di-scroll */
+    width: 100%;
+    top: 0;
+}
+
+/* Mengatur navigasi di dalam header */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Mengatur teks agar muncul di tengah halaman */
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.container h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan teks */
+}
+
+.container p {
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan teks */
+}
